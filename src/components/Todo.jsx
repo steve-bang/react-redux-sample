@@ -16,7 +16,7 @@ export default function Todo() {
             {todos.map((todo, index) => (
                 <li key={index}>{todo.text} 
                     <input type="checkbox" name="complete" checked={todo.complete} onChange={(e) => dispatch(toggleTodo(todo.id))} />
-                    <button onClick={() => dispatch(deleteTodo(todo.id))}>Remove</button>
+                    <button onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>
                 </li>
             ))}
         </ul>
