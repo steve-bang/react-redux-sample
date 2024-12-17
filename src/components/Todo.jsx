@@ -8,8 +8,6 @@ export default function Todo() {
 
     const dispatch = useDispatch();
 
-    console.log(todos);
-
     return (<>
 
         <InputTodo />
